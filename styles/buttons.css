@@ -1,0 +1,593 @@
+
+.valamis {
+  /* Neat 1.7.0
+  * http://neat.bourbon.io
+  * Copyright 2012-2014 thoughtbot, inc.
+  * MIT License */
+  /* Button Groups */
+  /* Dropdown Buttons */
+  /* selectize */
+  /* columns of same height styles */
+  /* vertical alignment styles */
+  /* Helpers */
+}
+
+
+
+/*------------------------------------*\
+#BUTTONS 
+\*------------------------------------*/
+
+/**
+* Valamis Button
+*/
+.valamis .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+  transition: 0.05s all linear;
+  border-radius: 4px;
+  border: 1px solid;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 8px;
+}
+
+
+
+.valamis .button:hover {
+  text-decoration: none;
+}
+
+/**
+* Valamis Button big
+*/
+.valamis .button.big {
+  line-height: 36px;
+  height: 40px;
+  
+}
+
+/**
+* Valamis Button medium
+*/
+.valamis .button.medium {
+  line-height: 32px;
+  height: 34px;
+}
+
+/**
+* Valamis Button small
+*/
+.valamis .button.small {
+  line-height: 24px;
+  height: 26px;
+}
+
+
+/**
+* Valamis Button no-text
+*/
+.valamis .button.no-text {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0px;
+}
+
+/**
+* Valamis Button no-text
+*/
+.valamis .button.no-text > [class^="val-icon-"]:before,
+.valamis .button.no-text > [class*=" val-icon-"]:before {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  line-height: inherit;
+}
+
+/**
+* Valamis Button 
+*/
+.valamis .button.big.no-text {
+  width: 40px;
+}
+
+/**
+* Valamis Button
+*/
+.valamis .button.medium.no-text {
+  width: 34px;
+}
+
+
+
+/**
+* Valamis Button small
+*/
+.valamis .button.small.no-text {
+  width: 26px;
+}
+
+/**
+* Valamis Button tooltip
+*/
+.valamis .button.big.button-tooltip {
+  width: 40px;
+  padding: 0; 
+}
+
+.valamis .button.medium.button-tooltip {
+  width: 34px;
+  padding: 0;
+}
+
+/**
+* Valamis back button
+*/
+
+
+.valamis .back-button {
+  height: 44px;
+  font-size: 13px;
+  line-height: 44px;
+}
+
+.valamis .back-button:before {
+  color: #AAA;
+  float: left;
+  margin-right: 5px;
+  line-height: 44px;
+}
+
+
+.valamis .button.google-drive-icon {
+  background: url("Img/icon-drive.png")
+  no-repeat 10px center;
+  background-size: 20px;
+  padding-left: 40px;
+}
+
+
+/*------------------------------------*\
+#BUTTONS styles 
+\*------------------------------------*/
+
+
+
+/**
+* Valamis Button primary
+*/
+.valamis .button.primary {
+  border-color: #598000;
+  background: #598000;
+  color: white;
+}
+
+.valamis .button.primary:hover {
+  background: #6A8D1A;
+  border-color: #6A8D1A;
+}
+
+.valamis .button.primary [class^="val-icon-"]:before,
+.valamis .button.primary [class*=" val-icon-"]:before {
+  color: white;
+}
+
+/**
+* Valamis Button neutral
+*/
+.valamis .button.neutral {
+  background: #F2F2F2;
+  color: #555;
+  border-color: #CCCCCC;
+}
+
+.valamis .button.neutral:hover {
+  color: #2c2c2c;
+}
+
+.valamis .button.neutral:hover > [class^="val-icon-"]:before,
+.valamis .button.neutral:hover > [class*=" val-icon-"]:before {
+  color: #555;
+}
+
+.valamis .button.neutral.active {
+  background: #ebebeb;
+}
+
+.valamis .button.neutral.active-page {
+  color: #2974A6;
+  border: 1px solid #2974A6;
+}
+
+.valamis .button.neutral > [class^="val-icon-"]:before,
+.valamis .button.neutral > [class*=" val-icon-"]:before {
+  color: #AAA;
+}
+
+/**
+* Valamis Button danger
+*/
+
+.valamis .button.danger {
+  background: #CC4233;
+  color: white;
+  border-color: #CC4233;
+}
+
+.valamis .button.danger:hover {
+  background-color: #993226;
+  border-color: #993226;
+}
+
+
+/**
+* Valamis button simple
+*/
+
+.valamis .button.simple {
+  background: transparent;
+  color: #555;
+  border: 1px solid transparent;
+}
+
+.valamis .button.simple > span {
+  color: #AAA;
+}
+
+.valamis .button.simple:hover {
+  color: #2c2c2c;
+}
+
+.valamis .button.simple:hover > span {
+  color: #555;
+}
+
+.valamis .button.simple.active {
+  color: #2c2c2c;
+  border: 1px solid #CCCCCC;
+  border-radius: 0;
+}
+
+.valamis .button.simple.active > span {
+  color: #555;
+}
+
+.valamis .button.simple.danger:hover {
+  background: transparent;
+  border-color: transparent;
+  color: #CC4233;
+}
+
+.valamis .button.simple.danger:hover > span {
+  color: #CC4233;
+}
+
+/**
+* Valamis Button disabled
+*/
+
+.valamis .button[disabled] {
+  color: #AAA;
+  background: #EAEAEA;
+  border-color: #EAEAEA;
+  cursor: default;
+}
+
+.valamis .button[disabled]:hover {
+  color: #AAA;
+  background: #EAEAEA;
+  border-color: #EAEAEA;
+}
+
+.valamis .button[disabled]:hover > [class^="val-icon-"]:before,
+.valamis .button[disabled]:hover > [class*=" val-icon-"]:before {
+  color: #AAA;
+}
+
+
+
+
+
+/**
+* Valamis Button
+*/
+
+.valamis .button.shift-right {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+/**
+* Valamis Button
+*/
+
+.valamis .button.shift-right:last-child {
+  margin-left: 0px;
+}
+
+/**
+* Valamis Button
+*/
+.valamis .button.shift-right.js-display-option {
+  margin-left: 0px;
+}
+/**
+* Valamis Button
+*/
+.valamis .button.shift-right.no-text.simple {
+  margin-left: 0px;
+}
+/**
+* Valamis Button
+*/
+
+
+
+
+/**
+* Valamis Button simple
+*/
+.valamis .button.simple {
+  background: transparent;
+  color: #555;
+  border: 1px solid transparent;
+}
+
+.valamis .button.simple > span {
+  color: #AAA;
+}
+
+.valamis .button.simple:hover {
+  color: #2c2c2c;
+}
+
+.valamis .button.simple:hover > span {
+  color: #555;
+}
+
+.valamis .button.simple.active {
+  color: #2c2c2c;
+  border: 1px solid #CCCCCC;
+  border-radius: 0;
+}
+
+.valamis .button.simple.active > span {
+  color: #555;
+}
+
+.valamis .button.simple.danger:hover {
+  background: transparent;
+  border-color: transparent;
+  color: #CC4233;
+}
+
+.valamis .button.simple.danger:hover > span {
+  color: #CC4233;
+}
+
+.valamis .button:focus {
+  outline: none;
+}
+
+.valamis .button > [class^="val-icon-"],
+.valamis .button > [class*=" val-icon-"] {
+  width: 20px;
+  height: 20px;
+}
+
+.valamis .button > [class^="val-icon-"]:before,
+.valamis .button > [class*=" val-icon-"]:before {
+  margin: -2px 4px 0 -4px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.valamis .button > .val-icon-right:before {
+  margin: -1px -4px 0 10px;
+}
+
+.valamis .button:last-child {
+  margin-right: 0;
+}
+
+.valamis .button.button-tooltip {
+  position: relative;
+}
+
+.valamis .button.button-tooltip:hover .val-badge {
+  display: block;
+}
+
+.valamis .button.button-tooltip.correct:hover .linked-slide-thumbnail {
+  display: block;
+}
+
+.valamis .button.button-tooltip.incorrect:hover .linked-slide-thumbnail {
+  display: block;
+}
+
+.valamis .button.button-tooltip .val-badge {
+  background-color: #555;
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 100%;
+  margin: 0 0 0 5px;
+  z-index: 10000;
+}
+
+.valamis .button.button-tooltip .val-badge.left {
+  top: 7px;
+  left: -5px;
+  margin: 0 5px 0 0;
+  -ms-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.valamis .button.button-tooltip .val-badge.bottom {
+  left: 0;
+  top: 34px;
+  bottom: -16px;
+  -ms-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  margin: 0;
+}
+
+.valamis .button.button-tooltip .linked-slide-thumbnail {
+  position: absolute;
+  display: none;
+  width: 1000px;
+  height: 750px;
+  left: 43px;
+  top: 38px;
+  -moz-transform: scale(0.2);
+  -moz-transform-origin: 0% 0%;
+  -webkit-transform: scale(0.2);
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform: scale(0.2);
+  -ms-transform-origin: 0% 0%;
+  border: none;
+  word-break: break-word;
+  white-space: normal;
+  color: black;
+}
+
+.valamis .button.button-tooltip .linked-slide-thumbnail.slide-thumbnail-bordered {
+  border: 5px solid #1C1C1C !important;
+}
+
+.valamis .button.button-tooltip > [class^="val-icon-"]:before,
+.valamis .button.button-tooltip > [class*=" val-icon-"]:before {
+  margin: 0 auto;
+}
+
+
+.valamis .button-group {
+  float: left;
+  margin-right: 10px;
+}
+
+.valamis .button-group > * {
+  margin-right: 0px;
+  float: left;
+}
+
+.valamis .button-group.button-group-big {
+  float: none;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.valamis .button-group.button-group-big .button {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 0;
+  background-color: transparent;
+  border-color: #F2F2F2;
+  color: #777;
+  border-radius: 0;
+}
+
+.valamis .button-group.button-group-big .button.active {
+  background-color: #F2F2F2;
+  border-color: #2974A6;
+  color: #4C4C4C;
+}
+
+.valamis .button-group.button-group-medium {
+  float: none;
+  display: inline-block;
+  margin: 0;
+}
+
+.valamis .button-group.button-group-medium .button {
+  margin: 0;
+  border-radius: 0;
+}
+
+.valamis .button-group.button-group-medium .button.active {
+  border-color: #2974A6;
+}
+
+.valamis .button-group.button-group-medium .button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.valamis .button-group.button-group-medium .button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.valamis td.button-group > * {
+  float: none;
+}
+
+.valamis .button-block .button {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.valamis .button-block .button.inline {
+  display: inline-block;
+}
+
+.valamis .button-block .button:not(.inline):last-child {
+  margin-bottom: 0;
+}
+
+.valamis .button-block.wide .button {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.valamis .button-divider-v {
+  display: inline-block;
+  width: 6px;
+  height: 34px;
+  border-right: 1px solid #000000;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.valamis .button-divider-v.neutral {
+  border-color: #CCCCCC;
+}
+
+.valamis .back-button {
+  height: 44px;
+  font-size: 13px;
+  line-height: 44px;
+}
+
+.valamis .back-button:before {
+  color: #AAA;
+  float: left;
+  margin-right: 5px;
+  line-height: 44px;
+}
+
+
+
+

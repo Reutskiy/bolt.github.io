@@ -1,0 +1,262 @@
+.valamis input,
+.valamis label,
+.valamis select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  outline: none;
+}
+
+.valamis label {
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+.valamis label.required:after {
+  content: "*";
+}
+
+.valamis label abbr {
+  display: none;
+}
+
+.valamis textarea,
+.valamis input[type="email"], .valamis input[type="number"], .valamis input[type="password"], .valamis input[type="search"], .valamis input[type="tel"], .valamis input[type="text"], .valamis input[type="url"], .valamis input[type="color"], .valamis input[type="date"], .valamis input[type="datetime"], .valamis input[type="datetime-local"], .valamis input[type="month"], .valamis input[type="time"], .valamis input[type="week"],
+.valamis select[multiple=multiple],
+.valamis .val-search {
+  box-sizing: border-box;
+  transition: border-color;
+  background: #FFF;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+  box-shadow: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: ;
+  padding: 4px;
+  width: 100%;
+  color: #555;
+  height: inherit;
+  line-height: 1.4;
+}
+
+.valamis textarea:hover,
+.valamis input[type="email"]:hover, .valamis input[type="number"]:hover, .valamis input[type="password"]:hover, .valamis input[type="search"]:hover, .valamis input[type="tel"]:hover, .valamis input[type="text"]:hover, .valamis input[type="url"]:hover, .valamis input[type="color"]:hover, .valamis input[type="date"]:hover, .valamis input[type="datetime"]:hover, .valamis input[type="datetime-local"]:hover, .valamis input[type="month"]:hover, .valamis input[type="time"]:hover, .valamis input[type="week"]:hover,
+.valamis select[multiple=multiple]:hover,
+.valamis .val-search:hover {
+  border-color: 1px solid #CCCCCC;
+}
+
+.valamis textarea:focus, .valamis textarea.focus,
+.valamis input[type="email"]:focus,
+.valamis input[type="email"].focus, .valamis input[type="number"]:focus, .valamis input[type="number"].focus, .valamis input[type="password"]:focus, .valamis input[type="password"].focus, .valamis input[type="search"]:focus, .valamis input[type="search"].focus, .valamis input[type="tel"]:focus, .valamis input[type="tel"].focus, .valamis input[type="text"]:focus, .valamis input[type="text"].focus, .valamis input[type="url"]:focus, .valamis input[type="url"].focus, .valamis input[type="color"]:focus, .valamis input[type="color"].focus, .valamis input[type="date"]:focus, .valamis input[type="date"].focus, .valamis input[type="datetime"]:focus, .valamis input[type="datetime"].focus, .valamis input[type="datetime-local"]:focus, .valamis input[type="datetime-local"].focus, .valamis input[type="month"]:focus, .valamis input[type="month"].focus, .valamis input[type="time"]:focus, .valamis input[type="time"].focus, .valamis input[type="week"]:focus, .valamis input[type="week"].focus,
+.valamis select[multiple=multiple]:focus,
+.valamis select[multiple=multiple].focus,
+.valamis .val-search:focus,
+.valamis .val-search.focus {
+  border-color: #2974A6;
+  box-shadow: none;
+  background-color: white;
+  outline: none;
+  color: #2c2c2c;
+}
+
+.valamis textarea {
+  resize: vertical;
+  font-weight: normal;
+  color: #555;
+  min-height: 100px;
+}
+
+.valamis a {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.valamis a:hover {
+  color: inherit;
+}
+
+.valamis input[type="text"], .valamis .val-search {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-weight: normal;
+  color: #555;
+  height: 34px;
+}
+
+.valamis .val-search {
+  position: relative;
+  padding: 0;
+}
+
+.valamis .val-search.cleartext:before {
+  font-family: valamis-icons !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  content: 'J';
+  cursor: pointer;
+  top: 6px;
+  right: 6px;
+  position: absolute;
+}
+
+.valamis .val-search input {
+  padding-right: 30px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  height: 32px;
+}
+
+.valamis .val-search input::-ms-clear {
+  display: none;
+}
+
+.valamis input[type="text"] {
+  display: inline-block;
+}
+
+.valamis input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.valamis input[type="checkbox"],
+.valamis input[type="radio"] {
+  display: inline;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: inherit;
+}
+
+.valamis input[type="file"] {
+  padding-bottom: 9px;
+  width: 100%;
+}
+
+.valamis select {
+  max-width: 100%;
+  width: auto;
+}
+
+.valamis input.form-input {
+  margin-bottom: 9px;
+}
+
+.valamis input.form-input[disabled=disabled] {
+  background: #EAEAEA;
+  color: #777;
+}
+
+.valamis input[type=checkbox].val-checkbox {
+  display: none;
+  vertical-align: middle;
+}
+
+.valamis input[type=checkbox].val-checkbox + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.valamis input[type=checkbox].val-checkbox + label:before {
+  font-family: valamis-icons;
+  border: 1px solid #CCCCCC;
+  background: #FFF;
+  content: '6';
+  margin-right: 5px;
+  color: transparent;
+  padding: 1px;
+  font-size: 16px;
+  border-radius: 1px;
+}
+
+.valamis input[type=checkbox].val-checkbox:checked + label:before {
+  color: black;
+}
+
+.valamis input[type=checkbox].val-checkbox:disabled + label {
+  cursor: not-allowed;
+}
+
+.valamis input[type=checkbox].val-checkbox:disabled + label:before {
+  background: #EAEAEA;
+}
+
+.valamis input[type=radio].val-radio {
+  margin: 0 5px 4px 0;
+}
+
+.valamis .radio-label {
+  display: inline;
+}
+
+.valamis .val-select {
+  box-sizing: border-box;
+  background: #FFF;
+  border: 1px solid #CCCCCC;
+  position: relative;
+  z-index: 1;
+  border-radius: 1px;
+}
+
+.valamis .val-select:before {
+  font-family: valamis-icons;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: normal;
+  width: 32px;
+  right: 0;
+  text-align: center;
+  content: 'y';
+  z-index: -1;
+  color: #AAA;
+}
+
+.valamis .val-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 1px;
+  display: block;
+  padding: 5px 25px 5px 5px;
+  width: 100%;
+  text-align: left;
+  color: #555;
+  line-height: normal;
+  height: 32px;
+  margin: 0;
+}
+
+.valamis .val-select select:focus {
+  border: none;
+  outline: none;
+}
+
+.valamis .val-select select::-ms-expand {
+  display: none;
+  /* to ie 10 */
+}

@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "valamis-icons";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/valamis-icons35.eot?#iefix') format("embedded-opentype"), url('fonts/valamis-icons35.woff') format("woff"), url('fonts/valamis-icons35.ttf') format("truetype"), url('fonts/valamis-icons35.svg#valamis-icons') format("svg");
+}
+
+@font-face {
+  font-family: "device-icons";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/device-icons26.eot?#iefix') format("embedded-opentype"), url('fonts/device-icons26.woff') format("woff"), url('fonts/device-icons26.ttf') format("truetype"), url('fonts/device-icons26.svg#device-icons') format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Light";
+  src: url("fonts/HelveticaNeue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.valamis [data-icon]:before {
+  font-family: valamis-icons !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.valamis [class^="val-icon"]:before,
+.valamis [class*="val-icon"]:before {
+  font-family: valamis-icons !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.valamis .val-icon-with-label {
+  display: inline;
+}
+
+.valamis .val-icon-with-label:before {
+  vertical-align: middle;
+}
+
+.valamis .val-icon-with-label span {
+  vertical-align: middle;
+  margin-left: 3px;
+  text-indent: -9999px;
+  display: none;
+}
+
+.valamis .portlet-body[min-width~="768px"] .val-icon-with-label span {
+  text-indent: inherit;
+  display: inline-block;
+}
+
+.valamis .val-icon-arrow-left-two:before,
+.valamis .val-icon-arrow-right-two:before,
+.valamis .val-icon-arrow-down-two:before {
+  content: "y";
+}
+
+.valamis .val-icon-arrow-left-two:before,
+.valamis .val-icon-arrow-right-two:before {
+  display: inline-block;
+}
+
+.valamis .val-icon-arrow-left-two:before {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.valamis .val-icon-arrow-right-two:before {
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.valamis .val-icon-drag:before {
+  content: "c";
+}
+
+.valamis .val-icon-bell:before {
+  content: "F";
+}
+
+.valamis .val-icon-heart:before {
+  content: "e";
+}
+
+.valamis .val-icon-menu-hamburger:before {
+  content: "5";
+}
+
+.valamis .val-icon-settings:before {
+  content: "N";
+}
+
+.valamis .val-icon-star:before {
+  content: "Q";
+}
+
+.valamis .val-icon-link:before {
+  content: "C";
+}
+
+.valamis .val-icon-arrange:before {
+  content: "w";
+}
+
+.valamis .val-icon-arrow-down:before {
+  content: "x";
+}
+
+.valamis .val-icon-arrow-left:before {
+  content: "x";
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+.valamis .val-icon-arrow-right:before {
+  content: "x";
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  display: inline-block;
+}
+
+.valamis .val-icon-arrow-up:before {
+  content: "x";
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+.valamis .val-icon-dropdown:before {
+  content: "A";
+}
+
+.valamis .val-icon-menu:before {
+  content: "L";
+}
+
+.valamis .val-icon-upload:before {
+  content: "m";
+}
+
+.valamis .val-icon-video:before {
+  content: "o";
+}
+
+.valamis .val-icon-minus:before {
+  content: "1";
+}
+
+.valamis .val-icon-duplicate:before {
+  content: "z";
+}
+
+.valamis .val-icon-edit:before {
+  content: "E";
+}
+
+.valamis .val-icon-pause:before {
+  content: "h";
+}
+
+.valamis .val-icon-pdf:before {
+  content: "g";
+}
+
+.valamis .val-icon-plus:before {
+  content: "t";
+}
+
+.valamis .val-icon-ppt:before {
+  content: "s";
+}
+
+.valamis .val-icon-book:before {
+  content: "G";
+}
+
+.valamis .val-icon-checkmark:before {
+  content: "6";
+}
+
+.valamis .val-icon-clock:before {
+  content: "3";
+}
+
+.valamis .val-icon-content:before {
+  content: "Y";
+}
+
+.valamis .val-icon-dots:before {
+  content: "W";
+}
+
+.valamis .val-icon-download-import-down:before {
+  content: "d";
+}
+
+.valamis .val-icon-download-import-right:before {
+  content: "d";
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  display: inline-block;
+}
+
+.valamis .val-icon-drop:before {
+  content: "v";
+}
+
+.valamis .val-icon-list-view:before {
+  content: "D";
+}
+
+.valamis .val-icon-image-bg:before {
+  content: "B";
+}
+
+.valamis .val-icon-image:before {
+  content: "u";
+}
+
+.valamis .val-icon-iframe:before {
+  content: "f";
+}
+
+.valamis .val-icon-grid:before {
+  content: "U";
+}
+
+.valamis .val-icon-grid-view:before {
+  content: "V";
+}
+
+.valamis .val-icon-globe:before {
+  content: "Z";
+}
+
+.valamis .val-icon-fullscreen-exit:before {
+  content: "2";
+}
+
+.valamis .val-icon-fullscreen:before {
+  content: "4";
+}
+
+.valamis .val-icon-folder:before {
+  content: "I";
+}
+
+.valamis .val-icon-exit:before {
+  content: "J";
+}
+
+.valamis .val-icon-presentation:before {
+  content: "r";
+}
+
+.valamis .val-icon-preview:before {
+  content: "q";
+}
+
+.valamis .val-icon-question:before {
+  content: "p";
+}
+
+.valamis .val-icon-search:before {
+  content: "M";
+}
+
+.valamis .val-icon-sort:before {
+  content: "P";
+}
+
+.valamis .val-icon-text:before {
+  content: "j";
+}
+
+.valamis .val-icon-trash:before {
+  content: "k";
+}
+
+.valamis .val-icon-undo:before {
+  content: "l";
+}
+
+.valamis .val-icon-redo:before {
+  content: "l";
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.valamis .val-icon-display:before {
+  content: "X";
+}
+
+.valamis .val-icon-user:before {
+  content: "n";
+}
+
+.valamis .val-icon-alert:before {
+  content: "b";
+}
+
+.valamis .val-icon-math:before {
+  content: "K";
+}
+
+.valamis .val-icon-share:before {
+  content: "O";
+}
+
+.valamis .val-icon-3d:before {
+  content: "a";
+}
+
+.valamis .val-icon-brush:before {
+  content: "H";
+}
+
+.valamis .val-icon-move-backward:before {
+  content: "0";
+}
+
+.valamis .val-icon-move-forward:before {
+  content: "T";
+}
+
+.valamis .val-icon-star-half:before {
+  content: "R";
+}
+
+.valamis .val-icon-navigator-view:before {
+  content: "S";
+}
+
+.valamis .val-icon-table-view:before {
+  content: "i";
+}
+
+.valamis .val-icon-attach:before {
+  content: "7";
+}
+
+.valamis .val-icon-print:before {
+  content: "8";
+}
+
+.valamis .val-icon-audio:before {
+  content: "9";
+}
+
+.valamis .val-icon-delete:before {
+  content: "J";
+}
+
+.valamis .val-icon-lock:before {
+  content: "!";
+}
+
+.valamis .val-icon-unlock:before {
+  content: "@";
+}
+
+
+
+
